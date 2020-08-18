@@ -99,12 +99,74 @@ body {
     height: auto;
 }
 
+.first {
+    margin-top: 5px;
+    display: flex;
+}
+
+.text {
+    flex: 1;
+}
+
+.images {
+    flex: 1;
+}
+
+.gallery {
+    width: 100%;
+    height: auto;
+    /*border-top: solid #015d92 5px;*/
+    
+}
+
+.pos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.button {
+    width: 300px;
+    height: 50px;
+    background-color: #015d92;
+    color: #fff;
+    font-family: Helvetica;
+}
+
 h1 {
     color: #01395a;
     font-family: Helvetica;     
     font-size: 75px;
     padding-left: 15px;
     padding-top: 30px;
+}
+
+.FHeader {
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 60px;
+    padding-top: 75px;
+    padding-left: 35px;
+    padding-bottom: 25px;
+}
+
+.SHeader {
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+}
+
+.para {
+    color: #01395a;
+    font-family: Helvetica;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
 }
 
 .nav a:hover, .dropdown:hover .db {
@@ -118,6 +180,10 @@ h1 {
 
 .dropdown:hover .content {
     display: block;
+}
+
+.land:hover {
+    background-color: #01395a;
 }
 
 
@@ -141,8 +207,23 @@ h1 {
         display: block;
     }
 
-    h1 {
+    h1, h2 {
         font-size: 50px;
+    }
+
+    .FHeader {
+        font-size: 40px;
+        padding-left: 15px;
+    }
+
+    .SHeader {
+        font-size: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .para {
+        font-size: 18px;
     }
 }
 
@@ -176,17 +257,48 @@ h1 {
         width: 100%;
         text-align: left;
     }
+
+    .first {
+        display: block;
+    }
+
+    .FHeader {
+        padding-top: 5px;
+    }
+
+    .text {
+        padding-bottom: 15px;
+    }
+
+    .gallery {
+        width: 100%;
+    }
+
+    .button {
+        width: 25px;
+        height: 10px;
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 300px) {
     
-    h1 {
+    h1, h2 {
         font-size: 25px;
     }
 
     .column {
         flex: 100%;
         max-width: 100%;
+    }
+
+    .gallery {
+        max-width: 100%;
+    }
+
+    .button {
+        width: 25px;
+        height: 10px;
     }
 
 }

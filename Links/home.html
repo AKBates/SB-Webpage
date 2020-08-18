@@ -2,22 +2,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ICF Construction</title>
-<link href="style.css" rel="stylesheet" type="text/css"/>
+<title>149 Pena Loop</title>
+<link href= "style.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <!--<div class="header">
-        <h1>149 Pena  Loop</h1>
+        <h1 class="header">149 Pena  Loop</h1>
     </div>-->
 
-    <div class="nav" id=myNav>
-        <a href="home.html">HOME</a>  
-        <a href="index.html" >PHOTO GALLERY</a>
+    <div class="nav" id=myNav> 
+        <a href="home.html" id="active">HOME</a>
+        <a href="index.html">PHOTO GALLERY</a>
         <div class="dropdown">
-            <button class="db" id="active">ICF CONSTRUCTION
+            <button class="db">ICF CONSTRUCTION
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="content">
@@ -54,26 +54,53 @@
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-    </a>
+         </a> 
     </div>
 
-    <div class="icf">
-        <img src="links/icf construction2.jpg">
-    </div>
-
-    <div class="icf">
-        <img src="links/icf construction4.jpg">
-    </div>
-
-    <div class="icf">
-        <img src="links/icf construction5.jpg">
-    </div>
-
-    <div class="icf">
-        <img src="links/icf_form.png">
+    <div class="first">
+        <!--<div class="text">
+            <h2 class="FHeader">VIEW THE HOUSE</h2>
+            <form action="index.html">
+                <div class="pos">
+                    <button class="button" type="submit">VIEW ALL PHOTOS</button>
+                </div>
+            </form>
+        </div>-->
+        <div class="images">
+            <h1 class="header">149 Pena Loop</h1>
+            <p class="para">Located in the secluded high desert area with great views of the Organ Mountains and the Mesilla Valley.
+                It is a custom-designed and custom-built SMART home with Insulated Concrete Form (ICF) exterior walls.
+             Freely review various documents such as the protective covenants, well record, building sketch, and matterport 3D video link.</p>
+            <img class="gallery" src="Images/image1.jpg">
+            <img class="gallery" src="Images/image2.jpg">
+            <img class="gallery" src="Images/image3.jpg">
+            <img class="gallery" src="Images/image5.jpg">
+            <img class="gallery" src="Images/image6.jpg">
+            <img class="gallery" src="Images/image7.jpg">
+            <img class="gallery" src="Images/image8.jpg">
+            <img class="gallery" src="Images/image9.jpg">
+            <img class="gallery" src="Images/image10.jpg">
+        </div>
     </div>
 
     <script>
+        var index = 0;
+        rotation();
+
+        function rotation() {
+            var i;
+            var x = document.getElementsByClassName("gallery");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            index++;
+            if(index > x.length) {
+                index = 1;
+            }
+            x[index-1].style.display = "block";
+            setTimeout(rotation, 2000);
+        }
+
         function myFunction() {
             var x = document.getElementById("myNav");
             if (x.className === "nav") {
@@ -84,5 +111,6 @@
             }
         }
     </script>
-
 </body>
+
+</html>
