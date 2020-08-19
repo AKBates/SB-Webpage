@@ -90,7 +90,7 @@ body {
 
 .icf {
    margin: 5px;
-   width: 300px;
+   width: 23%;
    display: inline-grid;
 }
 
@@ -99,23 +99,19 @@ body {
     height: auto;
 }
 
-.first {
-    margin-top: 5px;
-    display: flex;
-}
-
 .text {
     flex: 1;
 }
 
 .images {
-    flex: 1;
+    background-color: #eee;
 }
 
 .gallery {
     width: 100%;
     height: auto;
     /*border-top: solid #015d92 5px;*/
+    transform: scale(.8);
     
 }
 
@@ -143,21 +139,9 @@ h1 {
 }
 
 .FHeader {
-    color: #fff;
+    color: #01395a;
     font-family: Helvetica;
-    font-size: 60px;
-    padding-top: 75px;
-    padding-left: 35px;
-    padding-bottom: 25px;
-}
-
-.SHeader {
-    color: #fff;
-    font-family: Helvetica;
-    font-size: 40px;
-    padding-top: 50px;
-    padding-left: 35px;
-    padding-bottom: 15px;
+    font-size: 25px;
 }
 
 .para {
@@ -167,6 +151,36 @@ h1 {
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 50px;
+}
+
+.whole {
+    display: block;
+    margin-top: 1px;
+    margin-right: 1px;
+}
+
+.left {
+    display: flex;
+}
+
+.aid {
+    width: 50%;
+    height: auto;
+    flex: 50%;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.right {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2px;
+    background-color: rgba(228, 228, 228, 0.5);
+    /*flex: 1;
+    justify-content: flex-start;
+    flex-direction: column;*/
+    padding: 50px;
+    border-left: solid #015d92 20px; 
 }
 
 .nav a:hover, .dropdown:hover .db {
@@ -184,6 +198,11 @@ h1 {
 
 .land:hover {
     background-color: #01395a;
+}
+
+.right:hover {
+    background-color: rgba(228, 228, 228, 1);
+    border-left: solid #015d92 50px;
 }
 
 
@@ -212,18 +231,29 @@ h1 {
     }
 
     .FHeader {
-        font-size: 40px;
+        font-size: 25px;
         padding-left: 15px;
     }
 
-    .SHeader {
-        font-size: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
+    .icf {
+        width: 100%;
     }
 
     .para {
         font-size: 18px;
+    }
+
+    .whole {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        padding-left: 15px;
     }
 }
 
