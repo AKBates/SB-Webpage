@@ -183,6 +183,10 @@ h1 {
     border-left: solid #015d92 20px; 
 }
 
+i {
+    padding: 10px;
+}
+
 .nav a:hover, .dropdown:hover .db {
     background-color: #015d92;
     color: #fff;
