@@ -14,7 +14,7 @@ body {
 
 .nav {
     overflow: hidden;
-    background-color: #0e79b8;
+    background-color: #028367;
 }
 
 .nav a {
@@ -33,7 +33,7 @@ body {
 
 #active {
     text-decoration: underline;
-    background-color: #015d92;
+    background-color: #01634e;
 }
 
 .row {
@@ -125,13 +125,13 @@ body {
 .button {
     width: 300px;
     height: 50px;
-    background-color: #015d92;
+    background-color: #028367;
     color: #fff;
     font-family: Helvetica;
 }
 
 h1 {
-    color: #01395a;
+    color: #028367;
     font-family: Helvetica;     
     font-size: 75px;
     padding-left: 15px;
@@ -139,7 +139,7 @@ h1 {
 }
 
 .FHeader {
-    color: #01395a;
+    color: #01634e;
     font-family: Helvetica;
     font-size: 25px;
 }
@@ -179,8 +179,8 @@ h1 {
     /*flex: 1;
     justify-content: flex-start;
     flex-direction: column;*/
-    padding: 50px;
-    border-left: solid #015d92 20px; 
+    padding: 15px;
+    border-left: solid #028367 20px; 
 }
 
 i {
@@ -188,12 +188,12 @@ i {
 }
 
 .nav a:hover, .dropdown:hover .db {
-    background-color: #015d92;
+    background-color: #028367;
     color: #fff;
 }
 
 .content a:hover {
-    background-color: #015d92;
+    background-color: #a1a1a1;
 }
 
 .dropdown:hover .content {
@@ -201,12 +201,12 @@ i {
 }
 
 .land:hover {
-    background-color: #01395a;
+    background-color: #028367;
 }
 
 .right:hover {
     background-color: rgba(228, 228, 228, 1);
-    border-left: solid #015d92 50px;
+    border-left: solid #028367 50px;
 }
 
 
